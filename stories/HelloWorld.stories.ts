@@ -1,5 +1,5 @@
 import "../packages/hello-world/dist";
-import { Story, Meta } from '@storybook/html';
+import { Story, Meta } from "@storybook/html";
 
 export default {
   title: "Example/HelloWorld",
@@ -9,7 +9,7 @@ export default {
 } as Meta;
 
 const Template: Story<{
-  name?: string
+  name?: string;
 }> = (args) => {
   const { name } = args;
 

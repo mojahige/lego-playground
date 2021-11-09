@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "lego -w",
     "build": "lego",
-    "format": "prettier --write './src/**/*.{html,js}'",
+    "lint": "eslint .",
+    "lint.fix": "eslint --fix .",
+    "format": "prettier --write './**/*.{html,js}'",
     "clean": "rimraf ./dist"
   },
   "author": "mojahige (Yu Nozato)",

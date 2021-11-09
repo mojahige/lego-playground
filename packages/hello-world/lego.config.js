@@ -1,5 +1,5 @@
 module.exports = {
-  sourceDir: './src',
+  sourceDir: "./src",
   preStyle: `
   :host {
     box-sizing: border-box;
