@@ -1,13 +1,3 @@
-module.exports = {
-  sourceDir: "./src",
-  preStyle: `
-  :host {
-    box-sizing: border-box;
-  }
+const config = require("../../lego.config");
 
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }`,
-};
+module.exports = config;
