@@ -4,9 +4,12 @@
   "author": "mojahige(Yu Nozato)",
   "license": "ISC",
   "scripts": {
+    "dev": "npm run dev --workspaces --if-present",
     "build": "npm run build --workspaces --if-present",
     "clean": "npm run clean --workspaces --if-present",
-    "storybook": "start-storybook -p 6006",
+    "format:stories": "prettier --write './stories/**/*.{js,ts}'",
+    "format:packages": "npm run format --workspaces --if-present",
+    "storybook": "npm run dev & start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
   "workspaces": [

@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "lego -w",
     "build": "lego",
+    "format": "prettier --write './src/**/*.{html,js}'",
     "clean": "rimraf ./dist"
   },
   "author": "mojahige (Yu Nozato)",
