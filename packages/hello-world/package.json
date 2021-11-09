@@ -1,8 +1,9 @@
 {
   "name": "hello-world",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "author": "mojahige (Yu Nozato)",
+  "license": "ISC",
   "scripts": {
     "dev": "lego -w",
     "build": "lego",
@@ -11,8 +12,6 @@
     "format": "prettier --write './**/*.{html,js}' --ignore-path '../../.prettierignore'",
     "clean": "rimraf ./dist"
   },
-  "author": "mojahige (Yu Nozato)",
-  "license": "ISC",
   "devDependencies": {
     "@polight/lego": "^1.6.6"
   }
