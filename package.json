@@ -12,7 +12,7 @@
     "format.stories": "prettier --write './stories/**/*.{js,ts}'",
     "forma.packages": "npm run format --workspaces --if-present",
     "typecheck": "tsc --noEmit",
-    "storybook": "npm run dev & start-storybook -p 6006",
+    "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
   "workspaces": [
