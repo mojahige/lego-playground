@@ -1,0 +1,15 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "lego",
+    "clean": "rimraf ./dist"
+  },
+  "author": "mojahige (Yu Nozato)",
+  "license": "ISC",
+  "devDependencies": {
+    "@polight/lego": "^1.6.6"
+  }
+}
