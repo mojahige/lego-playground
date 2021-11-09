@@ -1,0 +1,18 @@
+{
+  "name": "convert-uppercase",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "author": "mojahige (Yu Nozato)",
+  "license": "ISC",
+  "scripts": {
+    "dev": "lego -w",
+    "build": "lego",
+    "lint": "eslint . --ignore-path ../../.eslintignore",
+    "lint.fix": "npm run lint -- --fix",
+    "format": "prettier --write './**/*.{html,js}' --ignore-path '../../.prettierignore'",
+    "clean": "rimraf ./dist"
+  },
+  "devDependencies": {
+    "@polight/lego": "^1.6.6"
+  }
+}

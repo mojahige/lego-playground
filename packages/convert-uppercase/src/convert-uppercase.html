@@ -1,0 +1,28 @@
+<template>
+  <input type="text" @input="onInput" :value="this.getValue()" />
+</template>
+
+<script>
+  export default class extends Lego {
+    init() {
+      this.state = {
+        value: "",
+      };
+    }
+
+    getValue() {
+      return this.state.value.toUpperCase();
+    }
+
+    onInput(event) {
+      this.render({ value: event.target.value });
+    }
+  }
+</script>
+
+<style>
+  input {
+    width: 100%;
+    padding: 0.5em;
+  }
+</style>
