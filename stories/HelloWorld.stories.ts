@@ -1,13 +1,16 @@
 import "../packages/hello-world/dist";
+import { Story, Meta } from '@storybook/html';
 
 export default {
   title: "Example/HelloWorld",
   argTypes: {
     name: { control: "text" },
   },
-};
+} as Meta;
 
-const Template = (args) => {
+const Template: Story<{
+  name?: string
+}> = (args) => {
   const { name } = args;
 
   if (name) {
